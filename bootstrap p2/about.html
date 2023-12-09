@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Site</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fuggles&family=Lato:ital,wght@1,300&family=Mooli&family=Sacramento&family=Shojumaru&display=swap" rel="stylesheet">
+   
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+/>
+
+
+<link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+
+  <body style="background-color:white; font-family: 'Shojumaru', cursive; overflow-x: hidden;" >
+
+    <!--Navbar-->
+
+    <div class="container-fluid bg-light py-2" >
+      <nav class="navbar navbar-expand-md navbar-light mb-3  border-bottom">
+        <div class="container">
+          <a class="navbar-brand"  style="font-family: 'Fuggles', cursive; color:red; font-size: 48px" href="#">
+            <img src="./images/logo3.gif" alt="not found" height="70px"  />
+            Love and Lemons
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a href="./index.html" class="nav-link active" aria-current="page">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="./about.html" class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="./galery.html" class="nav-link">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a href="./oder.html" class="nav-link">Books</a>
+              </li>
+              <li class="nav-item">
+                <a href="./contact.html" class="nav-link">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
+                  aria-controls="offcanvasTop">
+                  F&Q
+              </a>
+              </li>
+              <div
+              class="offcanvas offcanvas-top h-75"
+              tabindex="-1"
+              id="offcanvasTop"
+              aria-labelledby="offcanvasTopLabel"
+            >
+              <div class="offcanvas-header">
+                <h5 id="offcanvasTopLabel">Top F&Qs</h5>
+                <button
+                  type="button"
+                  class="btn-close text-reset"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <p><strong>1. Q: What is your company's mission?</strong></p>
+                <p>
+                  A: Our mission is to provide high-quality products/services
+                  that enhance your life in meaningful ways.
+                </p>
+
+                <p>
+                  <strong
+                    >2. Q: How can I contact your customer support?</strong
+                  >
+                </p>
+                <p>
+                  A: You can reach our customer support team through our
+                  <a href="/contact">Contact Us</a> page or by emailing
+                  <a href="mailto:support@yourwebsite.com"
+                    >support@yourwebsite.com</a
+                  >.
+                </p>
+
+                <p>
+                  <strong>3. Q: What payment methods do you accept?</strong>
+                </p>
+                <p>
+                  A: We accept all major credit cards, PayPal, and bank
+                  transfers for your convenience.
+                </p>
+
+                <p><strong>4. Q: What is your return policy?</strong></p>
+                <p>
+                  A: We offer a 30-day return policy. If you're not satisfied
+                  with your purchase, you can return it within 30 days for a
+                  full refund.
+                </p>
+
+                <p><strong>5. Q: How do I track my order?</strong></p>
+                <p>
+                  A: To track your order, simply log in to your account and go
+                  to the <a href="/order-history">Order History</a> page. There,
+                  you'll find tracking information for your shipment.
+                </p>
+
+                <p>
+                  <strong
+                    >6. Q: Are your products/services available
+                    internationally?</strong
+                  >
+                </p>
+                <p>
+                  A: Yes, we ship our products/services worldwide. However,
+                  please note that shipping times may vary for international
+                  orders.
+                </p>
+
+                <p>
+                  <strong>7. Q: Do you offer discounts for bulk orders?</strong>
+                </p>
+                <p>
+                  A: Yes, we offer discounts for bulk orders. Please contact our
+                  sales team at
+                  <a href="mailto:sales@yourwebsite.com"
+                    >sales@yourwebsite.com</a
+                  >
+                  for more information.
+                </p>
+
+                <p><strong>8. Q: What is your privacy policy?</strong></p>
+                <p>
+                  A: Our privacy policy outlines how we collect, use, and
+                  protect your personal information. You can read it
+                  <a href="/privacy-policy">here</a>.
+                </p>
+
+                <p>
+                  <strong
+                    >9. Q: How do I reset my password if I forget it?</strong
+                  >
+                </p>
+                <p>
+                  A: To reset your password, go to the login page and click on
+                  the "Forgot Password" link. Follow the instructions to reset
+                  your password.
+                </p>
+
+                <p>
+                  <strong
+                    >10. Q: Can I cancel my subscription at any time?</strong
+                  >
+                </p>
+                <p>
+                  A: Yes, you can cancel your subscription at any time. Simply
+                  go to your account settings and choose the "Cancel
+                  Subscription" option.
+                </p>
+              </div>
+            </div>
+          </li>
+
+
+              <li class="nav-item">
+                <a href="login.html" class="text-decoration-none">
+                  <button class="btn btn-outline-success bg-primary text-white mx-2" type="button">Login</button>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="signup.html">
+                  <button class="btn btn-outline-success bg-primary text-white mx-2" type="button">SignUp</button>
+                </a>
+              </li>
+              <li class="nav-item">
+                <div id="google_translate_element"></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <h1 class="display-5 text-center">About Us</h1>
+     <div>
+      
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-md-5 col-sm-12">
+            <img src="./aboutimg/IMG_41499-layers.jpg" alt="no image" class="img-fluid" style="max-width: 95%;" />
+          </div>
+          <div class="col-md-7 col-sm-12">
+            <div class="text-center">
+              <br>  
+              <h1 class="display-6">Welcome to Love and Lemons! </h1>
+              <p style="font-weight: lighter; text-align: center; color: grey;">My name is Jeanine, and I created Love and Lemons to celebrate how nourishing, fun, and delicious cooking with seasonal fruits and vegetables can be. I hope that the recipes here inspire you to try cooking a new vegetable, or try cooking a familiar vegetable in a new way. You’ll find a host of inventive vegetarian recipes for breakfast, lunch, and dinner, but I also want Love and Lemons to be a resource for you. We have guides to working with vegetables ranging from spaghetti squash to asparagus and tips for cooking  plant-based basics like quinoa, rice, and lentils.
+
+               And after all those veggies, I always save room for dessert! In my opinion, healthy  eating is all about balance, so you’ll find recipes  for brownies, cakes, cookies, and more here too.</p>
+              <a class="btn btn-outline-info" href="#">Coming soon</a>
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>
+
+
+
+
+     <h3 style="position: relative; left:10%; margin-top: 4%;">The Team :</h3>
+
+     <div class="container me-0 mt-4">
+      <div class="row align-items-center">
+        <div class="col-md-8 text-center mb-4 mb-md-0">
+          <h2 class="h3">Jeanine Donofrio, Creator & Recipe Developer</h2>
+          <p class="ms-2 mt-3 " style="color: grey;">
+            Jeanine Donofrio is a recipe developer and author of two bestselling cookbooks, The Love & Lemons Cookbook and Love & Lemons Every Day. Her passion is creating healthy yet approachable recipes that all types of eaters enjoy.
+            <br><br> Jeanine has also developed recipes for KitchenAid, Whole Foods, and Le Creuset, among others. Her work has been featured in The New York Times, People, Oprah, and Bon Appétit, and more.
+          </p>
+        </div>
+        <div class="col-md-4 col-sm-12 text-center ">
+          <img src="./aboutimg/img5.png" alt="no image found" class="img-fluid mx-auto d-block" style="max-width: 100%; height: auto; object-fit: cover;" style="width: 100%; max-width: 100%; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.2)';" onmouseout="this.style.transform='scale(1)';">
+        </div>
+      </div>
+    </div>
+    
+    <!-- TEAM 2 -->
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-5 col-sm-12 text-center">
+          <img src="./aboutimg/img4.png" alt="no image" class="img-fluid" style="max-width: 95%;" style="width: 100%; max-width: 100%; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.2)';" onmouseout="this.style.transform='scale(1)';"/>
+         
+        </div>
+        <div class="col-md-7 col-sm-12">
+          <div class="text-center">
+            <br>  
+            <h1 class="h3 " >Phoebe Moore, Senior Editor & Recipe Developer</h1>
+            <p style="font-weight: lighter; text-align: center; color: grey;">Phoebe Moore is the Senior Editor and Recipe Developer for Love & Lemons. Depending on the day, she might be writing, copyediting, testing/developing recipes, or shooting blog photos with Jeanine. Phoebe loves finding new ways to cook with seasonal vegetables, a passion she discovered during a summer she spent as a farmhand on Two Onion Farm in Belmont, Wisconsin. In her spare time, Phoebe writes recipes for a local CSA and volunteers with her neighborhood food pantry and community kitchen</p>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  <br><br><br><br>
+   
+
+
+
+    
+
+
+  <div>
+    <footer class="ps-5 pe-5" style="background-color: #f0f0f0; padding: 20px; border-top: 1px solid #ccc;">
+<div class="row">
+      <div class="col-12 col-md-4">
+        <a class="navbar-brand" style="font-family: 'Fuggles', cursive; color: red; font-size: 36px; text-decoration: none;" href="#">
+          <img src="./images/logo3.gif" alt="Love and Lemons Logo" height="70px" style="margin-right: 10px;" />
+          Love and Lemons
+        </a>
+      </div>
+    </div>
+      <div class="row">
+        
+        <div class="col-6 col-md-3">
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Home</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Features</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Pricing</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">FAQs</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">About</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-4 col-md-3">
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">RATINGS</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">MENU</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">RECIPES</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">CONTACT</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">ORDER</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-4">
+          <form>
+            <h5 style="font-weight: bold; color: #333;">Subscribe to our newsletter</h5>
+            <p>Get a monthly digest of what's new and exciting from us.</p>
+            <div class="d-flex flex-column flex-sm-row gap-2">
+              <label for="newsletter1" style="display: none;">Email address</label>
+              <input id="newsletter1" type="text" class="form-control p-1" style="padding: 5px;" placeholder="Your Email Address" />
+              <button style="padding: 5px; background-color: #007bff; color: #fff; border: none; cursor: pointer;" type="button" class="btn btn-primary">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+  
+      
+  
+      <div class="row border-top mt-2">
+        <div class="col-12">
+          <p class="text-center text-muted">&copy; 2023 Love and Lemons. All rights reserved.</p>
+        </div>
+      </div>
+      <div class="row p-1  d-flex justify-content-center">
+        <div class="col-12 col-md-4 ">
+          <div class="d-flex justify-content-center align-items-center">
+            <!-- Social Icons (Using Font Awesome) -->
+            <a href="#" class="text-decoration-none me-3">
+              <i class="fab fa-facebook-square fa-2x text-primary"></i>
+            </a>
+            <a href="#" class="text-decoration-none me-3">
+              <i class="fab fa-twitter-square fa-2x text-info"></i>
+            </a>
+            <a href="#" class="text-decoration-none me-3">
+              <i class="fab fa-instagram-square fa-2x text-danger"></i>
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=YOUR_PHONE_NUMBER" class="text-decoration-none me-3">
+              <i class="fab fa-whatsapp-square fa-2x text-success"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+    
+
+    <div class="loader" style=" position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; ">
+      <img src="./images/burger.gif" alt="Loading..." style="width: 600px;" />
+  </div>
+
+  <script>
+    // Hide the loader after 2 seconds (2000 milliseconds)
+    setTimeout(function () {
+        const loader = document.querySelector(".loader");
+        loader.style.display = "none";
+    }, 2500);
+
+    function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'en,es,fr',
+                autoDisplay: false,
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+
+
+</script>
+
+
+  
+  </body>
+
+</html>

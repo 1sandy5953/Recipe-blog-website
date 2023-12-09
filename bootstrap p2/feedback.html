@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="feed2.js"></script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body style="background:#2596be;
+   overflow-x: hidden">
+    <div>
+      <h1 class="display-5 text-center text-white" style="font-family: 'Montserrat', sans-serif;">Feedback</h1>
+      <hr class="w-50 m-auto bg-white" style="height: 4px" />
+
+      <h4 class="text-center lead">Please write your feedback below.</h4>
+      <br />
+      <div  style="position: relative; left: 25%">
+        <h1 class="display-6 col-md">
+          How would you like to rate our overall experience?
+        </h1>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="inlineRadioOptions"
+            id="inlineRadio1"
+            value="option1"
+            required
+          />
+          <label class="form-check-label" for="inlineRadio1">Bad</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="inlineRadioOptions"
+            id="inlineRadio2"
+            value="option2"
+            required
+          />
+          <label class="form-check-label" for="inlineRadio2">Average</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="inlineRadioOptions"
+            id="inlineRadio3"
+            value="option3"
+            required
+          />
+          <label class="form-check-label" for="inlineRadio3">Good</label>
+        </div>
+      </div>
+    </div>
+    <br />
+
+    <form
+      class="container"
+      id="signup-form"
+      style="position: relative; left: 10%  ; "
+    >
+      <div class="row " style="padding-left: 5%;">
+        <div class="col-md" >
+          <label for="name" style="font-size: 18px;">Full Name*</label>
+          <br />
+
+          <input
+            type="text"
+            id="name"
+            placeholder="Sandeep kumar jaiswal"
+            class="rounded w-75 h-75"
+           
+            minlength="4"
+          />
+        </div>
+
+        <div class="col-md " style="margin-right: 20%;">
+          <label for="email" style="font-size: 18px;">Email*</label> <br />
+          <input
+            type="email"
+            id="email"
+            placeholder="text@gmail.com"
+            class="rounded w-75 h-75"
+            
+          />
+        </div>
+      </div>
+      <br />
+      <div class="row" style="padding-left: 5%;">
+        <div class="col-md">
+          <label for="num" style="font-size: 18px;">Age*</label><br />
+          <input
+            type="number"
+            id="age"
+            placeholder="22"
+            class="w-75 h-75 rounded"
+           
+            minlength="3"
+          />
+        </div>
+        <div class="col-md form-label" style="margin-right: 20%;">
+          <label for="phone" style="font-size: 18px;">Enter your phone number:*</label> <br />
+        
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            class="w-75 h-75 rounded"
+            placeholder="XXXX-XX-XXXX"
+            pattern="[0-9]{4}-[0-9]{2}-[0-9]{4}"
+          />
+        </div>
+      </div>
+      <br />
+
+      <div>
+        <label for="message" style="font-size: 18px;">Message*</label><br />
+        <textarea
+          class="rounded w-75"
+          id="message"
+          rows="8"
+          placeholder=" Write Your Message here"
+         
+        ></textarea>
+      </div>
+      <br />
+
+      <div class="row">
+        <div class="col-md">
+          <button type="submit"style="font-size: 18px;" class="btn btn-primary w-75">Submit</button>
+        </div>
+      </div>
+    </form>
+    
+
+    
+  </body>
+</html>
